@@ -36,21 +36,21 @@ export default function Testimonials() {
   const doubledTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section id="testimonials" className="py-24 md:py-32 bg-[var(--secondary)] overflow-hidden">
+    <section id="testimonials" className="py-24 md:py-32 bg-secondary overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 mb-12">
         <div className="text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--foreground)] mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             What Clients Say
           </h2>
-          <div className="w-12 h-px bg-[var(--primary)] mx-auto" />
+          <div className="w-12 h-px bg-primary mx-auto" />
         </div>
       </div>
 
       {/* Scrolling testimonials */}
       <div className="relative">
         {/* Gradient masks */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[var(--secondary)] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[var(--secondary)] to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-secondary to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-secondary to-transparent z-10" />
 
         <div className="flex animate-scroll-left">
           {doubledTestimonials.map((testimonial, index) => (
@@ -58,22 +58,22 @@ export default function Testimonials() {
               key={index}
               className="flex-shrink-0 w-80 md:w-96 mx-4"
             >
-              <div className="bg-[var(--card)] rounded-lg p-6 h-full shadow-sm">
+              <div className="bg-card rounded-lg p-6 h-full shadow-sm">
                 <svg
-                  className="w-8 h-8 text-[var(--primary)] opacity-30 mb-4"
+                  className="w-8 h-8 text-primary opacity-30 mb-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
-                <p className="text-[var(--foreground)] text-sm leading-relaxed mb-6 italic">
+                <p className="text-foreground text-sm leading-relaxed mb-6 italic">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
-                <div className="border-t border-[var(--border)] pt-4">
-                  <p className="font-medium text-[var(--foreground)] text-sm">
+                <div className="border-t border-border pt-4">
+                  <p className="font-medium text-foreground text-sm">
                     {testimonial.name}
                   </p>
-                  <p className="text-[var(--muted-foreground)] text-xs">
+                  <p className="text-muted-foreground text-xs">
                     {testimonial.title}
                   </p>
                 </div>

@@ -19,25 +19,25 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32">
+    <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="max-w-2xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--foreground)] mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Get in Touch
           </h2>
-          <div className="w-12 h-px bg-[var(--primary)] mx-auto mb-6" />
-          <p className="text-[var(--muted-foreground)]">
+          <div className="w-12 h-px bg-primary mx-auto mb-6" />
+          <p className="text-muted-foreground">
             Ready to build a foundation that lasts? Let&apos;s talk.
           </p>
         </div>
 
-        <div className="bg-[var(--card)] rounded-lg p-8 md:p-10 shadow-sm">
+        <div className="bg-card rounded-lg p-8 md:p-10 shadow-sm">
           {!isVerified ? (
             <div className="text-center">
-              <p className="text-[var(--foreground)] mb-6">
+              <p className="text-foreground mb-6">
                 Quick check before we continue:
               </p>
-              <label className="block text-[var(--muted-foreground)] mb-4">
+              <label className="block text-muted-foreground mb-4">
                 What is 4 + 7?
               </label>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -46,26 +46,26 @@ export default function Contact() {
                   value={humanCheck}
                   onChange={(e) => setHumanCheck(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && handleVerify()}
-                  className="w-24 px-4 py-3 border border-[var(--border)] rounded-md bg-[var(--input)] text-[var(--foreground)] text-center focus:outline-none focus:ring-2 focus:ring-[var(--ring)]"
+                  className="w-24 px-4 py-3 border border-border rounded-md bg-input text-foreground text-center focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="?"
                 />
                 <button
                   onClick={handleVerify}
-                  className="px-6 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
+                  className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
                 >
                   Continue
                 </button>
               </div>
               {error && (
-                <p className="text-[var(--destructive)] text-sm mt-4">{error}</p>
+                <p className="text-destructive text-sm mt-4">{error}</p>
               )}
             </div>
           ) : (
             <div className="space-y-8">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[var(--accent)] mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent mb-4">
                   <svg
-                    className="w-6 h-6 text-[var(--primary)]"
+                    className="w-6 h-6 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <p className="text-[var(--muted-foreground)] mb-8">
+                <p className="text-muted-foreground mb-8">
                   Thanks for confirming. Here&apos;s how to reach Dave:
                 </p>
               </div>
@@ -87,11 +87,11 @@ export default function Contact() {
                 {/* Email */}
                 <a
                   href="mailto:dave@ironbarkhealth.co.uk"
-                  className="flex items-center gap-4 p-4 border border-[var(--border)] rounded-lg hover:border-[var(--primary)] transition-colors group"
+                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:bg-[var(--primary)] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
                     <svg
-                      className="w-5 h-5 text-[var(--primary)] group-hover:text-[var(--primary-foreground)] transition-colors"
+                      className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -105,8 +105,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-[var(--muted-foreground)]">Email</p>
-                    <p className="text-[var(--foreground)] font-medium">
+                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className="text-foreground font-medium">
                       dave@ironbarkhealth.co.uk
                     </p>
                   </div>
@@ -115,11 +115,11 @@ export default function Contact() {
                 {/* Phone */}
                 <a
                   href="tel:+447700000000"
-                  className="flex items-center gap-4 p-4 border border-[var(--border)] rounded-lg hover:border-[var(--primary)] transition-colors group"
+                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:bg-[var(--primary)] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
                     <svg
-                      className="w-5 h-5 text-[var(--primary)] group-hover:text-[var(--primary-foreground)] transition-colors"
+                      className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -133,15 +133,15 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-[var(--muted-foreground)]">Phone</p>
-                    <p className="text-[var(--foreground)] font-medium">
+                    <p className="text-sm text-muted-foreground">Phone</p>
+                    <p className="text-foreground font-medium">
                       +44 7700 000 000
                     </p>
                   </div>
                 </a>
               </div>
 
-              <p className="text-center text-sm text-[var(--muted-foreground)]">
+              <p className="text-center text-sm text-muted-foreground">
                 Dave typically responds within 24 hours.
               </p>
             </div>

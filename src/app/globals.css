@@ -4,32 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: oklch(0.9779 0.0026 67.7924);
-  --foreground: oklch(0.3182 0.0115 248.1899);
-  --card: oklch(1.0000 0 0);
-  --card-foreground: oklch(0.3182 0.0115 248.1899);
-  --popover: oklch(1.0000 0 0);
-  --popover-foreground: oklch(0.3182 0.0115 248.1899);
-  --primary: oklch(0.5854 0.0576 135.3612);
-  --primary-foreground: oklch(1.0000 0 0);
-  --secondary: oklch(0.9260 0.0088 67.7167);
-  --secondary-foreground: oklch(0.3182 0.0115 248.1899);
-  --muted: oklch(0.9557 0.0053 67.7614);
-  --muted-foreground: oklch(0.5491 0.0226 248.2392);
-  --accent: oklch(0.9271 0.0077 134.8681);
-  --accent-foreground: oklch(0.3182 0.0115 248.1899);
-  --destructive: oklch(0.5714 0.2121 27.2502);
-  --destructive-foreground: oklch(1.0000 0 0);
-  --border: oklch(0.8865 0.0067 67.7388);
-  --input: oklch(0.9247 0.0044 67.7694);
-  --ring: oklch(0.5854 0.0576 135.3612);
-  --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'Lora', serif;
-  --radius: 0.5rem;
-  --tracking-normal: 0.01em;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,61 +15,17 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
-  background-color: var(--background);
-  color: var(--foreground);
-  letter-spacing: var(--tracking-normal);
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f3ef;
+  color: #3d4a5c;
+  letter-spacing: 0.01em;
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: 'Lora', serif;
   font-weight: 500;
   line-height: 1.2;
-}
-
-@layer utilities {
-  .font-serif {
-    font-family: var(--font-serif);
-  }
-  
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-}
-
-/* Testimonials scroll animation */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll-left {
-  animation: scroll-left 30s linear infinite;
-}
-
-.animate-scroll-left:hover {
-  animation-play-state: paused;
-}
-
-/* Fade in animation */
-@keyframes fade-in-up {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
 }
 
 .animation-delay-100 { animation-delay: 0.1s; }
@@ -103,3 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 .animation-delay-300 { animation-delay: 0.3s; }
 .animation-delay-400 { animation-delay: 0.4s; }
 .animation-delay-500 { animation-delay: 0.5s; }
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}

@@ -18,14 +18,14 @@ export default function Approach() {
   ];
 
   return (
-    <section id="approach" className="py-24 md:py-32 bg-[var(--secondary)]">
+    <section id="approach" className="py-24 md:py-32 bg-secondary">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--foreground)] mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             The Approach
           </h2>
-          <div className="w-12 h-px bg-[var(--primary)] mx-auto mb-6" />
-          <p className="text-[var(--muted-foreground)] text-lg">
+          <div className="w-12 h-px bg-primary mx-auto mb-6" />
+          <p className="text-muted-foreground text-lg">
             Three disciplines. One integrated practice.
           </p>
         </div>
@@ -34,17 +34,17 @@ export default function Approach() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="bg-[var(--card)] rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-card rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="w-10 h-10 rounded-full bg-[var(--accent)] flex items-center justify-center mb-6">
-                <span className="font-serif text-lg text-[var(--primary)]">
+              <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center mb-6">
+                <span className="font-serif text-lg text-primary">
                   {index + 1}
                 </span>
               </div>
-              <h3 className="font-serif text-xl text-[var(--foreground)] mb-4">
+              <h3 className="font-serif text-xl text-foreground mb-4">
                 {pillar.title}
               </h3>
-              <p className="text-[var(--muted-foreground)] leading-relaxed text-sm">
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 {pillar.description}
               </p>
             </div>

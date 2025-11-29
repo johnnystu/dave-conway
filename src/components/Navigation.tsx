@@ -26,12 +26,12 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[var(--card)] shadow-md py-3"
+          ? "bg-card shadow-md py-3"
           : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-serif text-xl font-medium text-[var(--foreground)]">
+        <a href="#" className="font-serif text-xl font-medium text-foreground">
           Ironbark Health
         </a>
 
@@ -41,7 +41,7 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -56,17 +56,17 @@ export default function Navigation() {
         >
           <div className="w-6 h-5 relative flex flex-col justify-between">
             <span
-              className={`w-full h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
+              className={`w-full h-0.5 bg-foreground transition-all duration-300 ${
                 isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`w-full h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
+              className={`w-full h-0.5 bg-foreground transition-all duration-300 ${
                 isMobileMenuOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`w-full h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
+              className={`w-full h-0.5 bg-foreground transition-all duration-300 ${
                 isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -76,7 +76,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-[var(--card)] shadow-lg transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-card shadow-lg transition-all duration-300 ${
           isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -85,7 +85,7 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}

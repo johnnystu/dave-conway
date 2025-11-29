@@ -33,7 +33,7 @@ export default function Navigation() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="font-serif text-xl font-medium text-foreground">
-          Ironbark Health
+          Ironbark Training
         </a>
 
         {/* Desktop Navigation */}

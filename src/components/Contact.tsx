@@ -86,7 +86,7 @@ export default function Contact() {
               <div className="grid sm:grid-cols-2 gap-6">
                 {/* Email */}
                 <a
-                  href="mailto:dave@ironbarkhealth.co.uk"
+                  href="mailto:dave@ironbark.training"
                   className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group overflow-hidden"
                 >
                   <div className="w-10 h-10 flex-shrink-0 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
@@ -107,7 +107,7 @@ export default function Contact() {
                   <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="text-foreground font-medium truncate">
-                      dave@ironbarkhealth.co.uk
+                      dave@ironbark.training
                     </p>
                   </div>
                 </a>

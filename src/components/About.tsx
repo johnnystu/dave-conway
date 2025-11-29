@@ -12,7 +12,7 @@ export default function About() {
             The ironbark is one of the hardest, most resilient trees on earth — built to endure fire, 
             drought, and decades of pressure without breaking. It doesn&apos;t grow fast. It grows strong. 
             For men in their forties and beyond, that resonates. You&apos;ve spent years carrying weight — 
-            work, family, responsibility — and the body has quietly absorbed it all. Ironbark Health 
+            work, family, responsibility — and the body has quietly absorbed it all. Ironbark Training 
             is about building the kind of foundation that lasts: mobility that returns, habits that stick, 
             health that compounds over time. Not a quick fix. Not a reinvention. Just the long, patient 
             work of looking after what you&apos;ve built — so it carries you further.
@@ -28,7 +28,7 @@ export default function About() {
           
           <div className="space-y-6 text-foreground leading-relaxed">
             <p className="font-medium">
-              Ironbark Health was founded by Dave Conway.
+              Ironbark Training was founded by Dave Conway.
             </p>
             
             <p>
@@ -57,7 +57,7 @@ export default function About() {
             </p>
             
             <p className="font-medium text-primary">
-              Ironbark Health is where that work happens.
+              Ironbark Training is where that work happens.
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="font-serif text-lg text-foreground">
-              Ironbark Health
+              Ironbark Training
             </p>
             <p className="text-sm text-muted-foreground">
               Movement. Longevity. Follow-through.
@@ -38,7 +38,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Ironbark Health. All rights reserved.
+            © {currentYear} Ironbark Training. All rights reserved.
           </p>
 
           {/* Social Links */}
@@ -56,7 +56,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/ironbarkhealth"
+              href="https://instagram.com/ironbarktraining"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

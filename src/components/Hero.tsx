@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="font-serif text-5xl md:text-7xl font-medium text-foreground mb-6 animate-fade-in-up">
-          Ironbark Health
+          Ironbark Training
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground mb-4 animate-fade-in-up animation-delay-100 font-light tracking-wide">

@@ -18,7 +18,7 @@ export default function ClientArea() {
       <header className="py-6 px-6">
         <div className="max-w-6xl mx-auto">
           <a href="/" className="font-serif text-xl font-medium text-foreground">
-            Ironbark Health
+            Ironbark Training
           </a>
         </div>
       </header>
@@ -32,7 +32,7 @@ export default function ClientArea() {
             </h1>
             <div className="w-12 h-px bg-primary mx-auto mb-6" />
             <p className="text-muted-foreground leading-relaxed">
-              Welcome back. This space is reserved for Ironbark Health clients — 
+              Welcome back. This space is reserved for Ironbark Training clients — 
               a private area to access your personalised programmes, track progress, 
               and stay connected between sessions.
             </p>
@@ -92,7 +92,7 @@ export default function ClientArea() {
               <p className="text-sm text-muted-foreground">
                 Trouble signing in?{" "}
                 <a 
-                  href="mailto:dave@ironbarkhealth.co.uk" 
+                  href="mailto:dave@ironbark.training" 
                   className="text-primary hover:underline"
                 >
                   Contact Dave
@@ -119,7 +119,7 @@ export default function ClientArea() {
       <footer className="py-6 px-6 border-t border-border">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Ironbark Health. All rights reserved.
+            © {new Date().getFullYear()} Ironbark Training. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground tracking-wider">
             Ironbark Method: 193472

@@ -19,14 +19,18 @@ export default function About() {
           </p>
         </div>
 
-        {/* About Dave */}
+        {/* Meet the Founder */}
         <div className="bg-card rounded-lg p-8 md:p-12 shadow-sm">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">
-            About Dave
+            Meet the Founder
           </h2>
           <div className="w-12 h-px bg-primary mb-8" />
           
           <div className="space-y-6 text-foreground leading-relaxed">
+            <p className="font-medium">
+              Ironbark Health was founded by Dave Conway.
+            </p>
+            
             <p>
               Thirty years in high-stakes, high-pressure environments across the globe. Then seven 
               years asking a different question: how do you help people live longer, move better, 
@@ -34,10 +38,16 @@ export default function About() {
             </p>
             
             <p>
-              Dave is a qualified health coach, yoga instructor, and specialist in breathing and 
-              HRV-based training interventions. He&apos;s a founding director of Respect Health, a 
-              cardiovascular disease intervention programme now published in the British Medical 
-              Journal for its community impact.
+              Dave is a qualified health coach and movement specialist, with advanced certifications 
+              in HRV-based training, breathwork, and nervous system regulation. He&apos;s a founding 
+              director of Respect Health, a cardiovascular intervention programme now published in 
+              the British Medical Journal.
+            </p>
+
+            <p>
+              Over seven years, he&apos;s developed the Ironbark Method — an integrated approach to 
+              mobility, cardiovascular health, and behavioural adherence designed specifically for 
+              men in demanding roles.
             </p>
             
             <p>

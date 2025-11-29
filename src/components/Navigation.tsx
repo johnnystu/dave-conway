@@ -20,6 +20,7 @@ export default function Navigation() {
     { href: "#services", label: "Services" },
     { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Get in Touch" },
+    { href: "/clients", label: "Client Area" },
   ];
 
   return (

@@ -7,10 +7,10 @@ export default function Contact() {
   const [isVerified, setIsVerified] = useState(false);
   const [error, setError] = useState("");
 
-  const correctAnswer = "11"; // 4 + 7
+  const correctAnswer = "3"; // simple: "three"
 
   const handleVerify = () => {
-    if (humanCheck.trim() === correctAnswer) {
+    if (humanCheck.trim().toLowerCase() === correctAnswer || humanCheck.trim() === "three") {
       setIsVerified(true);
       setError("");
     } else {
@@ -38,7 +38,7 @@ export default function Contact() {
                 Quick check before we continue:
               </p>
               <label className="block text-muted-foreground mb-4">
-                What is 4 + 7?
+                How many letters are in the word &ldquo;oak&rdquo;?
               </label>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <input
@@ -87,9 +87,9 @@ export default function Contact() {
                 {/* Email */}
                 <a
                   href="mailto:dave@ironbarkhealth.co.uk"
-                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group"
+                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group overflow-hidden"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
                     <svg
                       className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors"
                       fill="none"
@@ -104,9 +104,9 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-foreground font-medium">
+                    <p className="text-foreground font-medium truncate">
                       dave@ironbarkhealth.co.uk
                     </p>
                   </div>
@@ -115,9 +115,9 @@ export default function Contact() {
                 {/* Phone */}
                 <a
                   href="tel:+447700000000"
-                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group"
+                  className="flex items-center gap-4 p-4 border border-border rounded-lg hover:border-primary transition-colors group overflow-hidden"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors">
                     <svg
                       className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors"
                       fill="none"
@@ -132,7 +132,7 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">Phone</p>
                     <p className="text-foreground font-medium">
                       +44 7700 000 000

@@ -6,7 +6,11 @@ export default function Services() {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Services
           </h2>
-          <div className="w-12 h-px bg-primary mx-auto" />
+          <div className="w-12 h-px bg-primary mx-auto mb-6" />
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Every engagement begins with a conversation. Programmes are tailored to your goals, 
+            schedule, and starting point.
+          </p>
         </div>
 
         <div className="space-y-12">
@@ -22,10 +26,7 @@ export default function Services() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Standard */}
               <div className="border border-border rounded-lg p-6">
-                <div className="flex items-baseline justify-between mb-4">
-                  <h4 className="font-serif text-xl text-foreground">Standard</h4>
-                  <span className="text-primary font-medium">£120/week</span>
-                </div>
+                <h4 className="font-serif text-xl text-foreground mb-4">Standard</h4>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
@@ -63,10 +64,7 @@ export default function Services() {
                 <div className="absolute -top-3 left-6 bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full">
                   Recommended
                 </div>
-                <div className="flex items-baseline justify-between mb-4">
-                  <h4 className="font-serif text-xl text-foreground">Premium</h4>
-                  <span className="text-primary font-medium">£160/week</span>
-                </div>
+                <h4 className="font-serif text-xl text-foreground mb-4">Premium</h4>
                 <p className="text-sm text-muted-foreground mb-4">
                   Everything in Standard, plus:
                 </p>
@@ -104,10 +102,7 @@ export default function Services() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Workshop */}
               <div className="border border-border rounded-lg p-6">
-                <div className="flex items-baseline justify-between mb-4">
-                  <h4 className="font-serif text-xl text-foreground">Half-Day Workshop</h4>
-                  <span className="text-primary font-medium">£950</span>
-                </div>
+                <h4 className="font-serif text-xl text-foreground mb-4">Half-Day Workshop</h4>
                 <p className="text-sm text-muted-foreground mb-4">3 hours</p>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -132,17 +127,14 @@ export default function Services() {
                   </li>
                 </ul>
                 <p className="text-xs text-muted-foreground mt-4">
-                  Up to 15 participants. Additional attendees at £40 per head.
+                  Tailored for teams up to 15. Larger groups by arrangement.
                 </p>
               </div>
 
               {/* Padelboard */}
               <div className="border border-border rounded-lg p-6">
-                <div className="flex items-baseline justify-between mb-4">
-                  <h4 className="font-serif text-xl text-foreground">Summer Padelboard</h4>
-                  <span className="text-primary font-medium">£950</span>
-                </div>
-                <p className="text-sm text-muted-foreground mb-4">Up to 8 participants</p>
+                <h4 className="font-serif text-xl text-foreground mb-4">Summer Padelboard</h4>
+                <p className="text-sm text-muted-foreground mb-4">Seasonal experience</p>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
@@ -161,6 +153,9 @@ export default function Services() {
                     Blue-health mindfulness
                   </li>
                 </ul>
+                <p className="text-xs text-muted-foreground mt-4">
+                  Small groups only. Available May–September.
+                </p>
               </div>
             </div>
           </div>
@@ -176,10 +171,7 @@ export default function Services() {
 
             <div className="max-w-md">
               <div className="border border-border rounded-lg p-6">
-                <div className="flex items-baseline justify-between mb-4">
-                  <h4 className="font-serif text-xl text-foreground">1:1 Remote</h4>
-                  <span className="text-primary font-medium">£100/week</span>
-                </div>
+                <h4 className="font-serif text-xl text-foreground mb-4">1:1 Remote</h4>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
@@ -215,6 +207,16 @@ export default function Services() {
             <p className="text-sm text-muted-foreground mt-2">
               Minimum commitment: 12 weeks
             </p>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center pt-8">
+            <a
+              href="#contact"
+              className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-md font-medium text-sm tracking-wide hover:opacity-90 transition-opacity"
+            >
+              Discuss Your Programme
+            </a>
           </div>
         </div>
       </div>
